@@ -4,8 +4,6 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Gallery(props) {
   const { currentCategory } = props;
-  console.log("Current Property: ", props)
-
   return (
     <section>
       <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
@@ -14,5 +12,4 @@ function Gallery(props) {
     </section>
   );
 }
-
 export default Gallery;
